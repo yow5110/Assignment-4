@@ -1,8 +1,8 @@
 # Week 5 Task 2
 
-Similar to Task 1, another method of numerical integration is the trapezoid rule, where the area below the function within each interval [x1,x2] is estimated from a trapezoid with its two unequal sides being f(x1) and f(x2).
+Similar to Task 1, another method of numerical integration is the trapezoid rule, where the area below the function within each interval [x_i,x_i+1] is estimated from a trapezoid with its two unequal sides being f(x_i) and f(x_i+1).
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\int_a^bf(x)dx\approx&space;\frac{b-a}{n}\sum&space;_{i=0}^{n-1}f\left(a&plus;\left(i&plus;\frac{1}{2}\right)\frac{b-a}{n}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_a^bf(x)dx\approx&space;\frac{b-a}{n}\sum&space;_{i=0}^{n-1}f\left(a&plus;\left(i&plus;\frac{1}{2}\right)\frac{b-a}{n}&space;\right&space;)" title="\int_a^bf(x)dx\approx \frac{b-a}{n}\sum _{i=0}^{n-1}f\left(a+\left(i+\frac{1}{2}\right)\frac{b-a}{n} \right )" /></a>
+<img src="https://latex.codecogs.com/gif.image?\dpi{120}\int^b_a&space;f(x)dx&space;\approx&space;\sum^{n-1}_{i=1}&space;\frac{1}{2}&space;&space;\left[&space;f(x_i)&space;&plus;&space;f(x_{i&plus;1})&space;\right]&space;\frac{b-a}{n}" title="https://latex.codecogs.com/gif.image?\dpi{120}\int^b_a f(x)dx \approx \sum^{n-1}_{i=1} \frac{1}{2} \left[ f(x_i) + f(x_{i+1}) \right] \frac{b-a}{n}" />
 
 Here's a visual representation 
 <img src="ftrapezoid.png" alt="hi" class="inline"/>
