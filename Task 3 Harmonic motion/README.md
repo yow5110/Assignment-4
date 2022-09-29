@@ -14,7 +14,7 @@ For a linear restoring force we know the analytic solution of this problem
 
 where the amplitude <a href="https://www.codecogs.com/eqnedit.php?latex=A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A" title="A" /></a> and the phase <a href="https://www.codecogs.com/eqnedit.php?latex=\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi" title="\phi" /></a> are quantities that depend on the initial conditions of the system.
 
-Here we will instead solve the problem numerically, by taking small steps in time and using a first-order approximation for the trajectory of the particle. In particular, if we know the position and velocity of the particle at time t, we can infer the position at time t+dt as 
+Here we will first solve the problem numerically, by taking small steps in time and using a first-order approximation for the trajectory of the particle. In particular, if we know the position and velocity of the particle at time t, we can infer the position at time t+dt as 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=x(t&plus;dt)=x(t)&plus;\left.\frac{dx}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;x(t)&plus;v(t)dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x(t&plus;dt)=x(t)&plus;\left.\frac{dx}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;x(t)&plus;v(t)dt" title="x(t+dt)=x(t)+\left.\frac{dx}{dt}\right|_t dt\:+O(dt^2)\approx x(t)+v(t)dt" /></a>
 
