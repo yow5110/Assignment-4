@@ -8,7 +8,7 @@ The problem to solve is a second order differential equation in position and tim
 
 where <a href="https://www.codecogs.com/eqnedit.php?latex=x_{eq}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{eq}" title="x_{eq}" /></a> is the equilibrium position of the spring, while <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a> is the force constant.
 
-For a linear restoring force we know the analytic solution of this problem
+For a linear restoring force we know the analytical solution of this problem
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=x(t)=x_0&plus;A\cos\left(\sqrt\frac{k}{m}&space;\:&space;t&space;&plus;\phi&space;\right)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x(t)=x_{eq}&plus;A\cos\left(\sqrt\frac{k}{m}&space;\:&space;t&space;&plus;\phi&space;\right)" title="x(t)=x_{eq}+A\cos\left(\sqrt\frac{k}{m} \: t +\phi \right)" /></a>
 
@@ -24,4 +24,4 @@ For the velocity we can use a similar strategy and express it as
 
 TASK: Complete the missing pieces in the code. Visualize the trajectory of the particle undergoing simple harmonic motion, plotting its position x as against time t, both in physical units like meters and seconds. Compare the numerical trajectory with the exact solution for the motion. 
 
-EXPECTED OUTCOME: For small enough timesteps (<=0.001), the numerical trajectory should be very close to the analytic result. An example figure is attached where the timestep is too large such that numerical errors are obvious.
+EXPECTED OUTCOME: For small enough timesteps (<=0.001), the numerical trajectory should be very close to the analytical result. An example figure is attached where the timestep is too large such that numerical errors are obvious.
