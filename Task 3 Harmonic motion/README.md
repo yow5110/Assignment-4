@@ -14,14 +14,6 @@ For a linear restoring force we know the analytical solution of this problem
 
 where the amplitude <a href="https://www.codecogs.com/eqnedit.php?latex=A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A" title="A" /></a> and the phase <a href="https://www.codecogs.com/eqnedit.php?latex=\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi" title="\phi" /></a> are quantities that depend on the initial conditions of the system.
 
-Here we will first solve the problem numerically, by taking small steps in time and using a first-order approximation for the trajectory of the particle. In particular, if we know the position and velocity of the particle at time t, we can infer the position at time t+dt as 
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=x(t&plus;dt)=x(t)&plus;\left.\frac{dx}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;x(t)&plus;v(t)dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x(t&plus;dt)=x(t)&plus;\left.\frac{dx}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;x(t)&plus;v(t)dt" title="x(t+dt)=x(t)+\left.\frac{dx}{dt}\right|_t dt\:+O(dt^2)\approx x(t)+v(t)dt" /></a>
-
-For the velocity we can use a similar strategy and express it as
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=v(t&plus;dt)=v(t)&plus;\left.\frac{dv}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;v(t)&plus;a(t)dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?v(t&plus;dt)=v(t)&plus;\left.\frac{dv}{dt}\right|_t&space;dt\:&plus;O(dt^2)\approx&space;v(t)&plus;a(t)dt" title="v(t+dt)=v(t)+\left.\frac{dv}{dt}\right|_t dt\:+O(dt^2)\approx v(t)+a(t)dt" /></a>
-
-TASK: Complete the missing pieces in the code. Visualize the trajectory of the particle undergoing simple harmonic motion, plotting its position x as against time t, both in physical units like meters and seconds. Compare the numerical trajectory with the exact solution for the motion. 
+TASK: Complete the missing pieces in the code to propagate the particle's motion in time using Euler's method. Visualize the trajectory of the particle undergoing simple harmonic motion, plotting its position x as against time t, both in physical units like meters and seconds. Compare the numerical trajectory with the exact solution for the motion. 
 
 EXPECTED OUTCOME: For small enough timesteps (<=0.001), the numerical trajectory should be very close to the analytical result. An example figure is attached where the timestep is too large such that numerical errors are obvious.
