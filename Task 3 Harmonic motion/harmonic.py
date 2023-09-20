@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Initialize the physical properties of the system
-dt=0.01 # this value is probably too large, you can change it. In seconds.
+dt=      # In seconds.
 k=1.0   #spring constant in SI units
 xeq=0.0 #equilibrium position of the particle on a spring
 mass=0.1 # in kg
@@ -21,11 +21,12 @@ def felastic(k,xeq,x):
     Output results:
         elastic force
     """
+    
     return 
 
 
 # The following is the function responsible to describe the motion of a single particle during a short timestep
-def move(dt,xpos,xvel,xforce,mass):
+def move(xpos,xvel,xforce,mass):
     """
     This function describes the motion of a single particle subject to a constant force.
     The particle's coordinates are updated according to Euler algorithm. 
@@ -36,9 +37,9 @@ def move(dt,xpos,xvel,xforce,mass):
         xforce: x-component of particle's force; mass: 
         mass of particle.
     Output results:
-        updated x components of particle's position and velocity
+        update x components of particle's position and velocity
     """
-    xpos = xpos + (dt*xvel)
+    xpos = xpos + dt*xvel
     xacceleration = 
     xvel = xvel + dt * xacceleration
     
@@ -49,17 +50,14 @@ def move(dt,xpos,xvel,xforce,mass):
 # and let go with zero velocity
 xpos = 1
 xvel = 0
-
-t_total = 10/dt  #we simulate for a total of 10 seconds
-t_range = range(int(t_total))
-realtime_range = [it*dt for it in t_range] #to plot x against real time t later
+t_range =  
 
 
 #numerical result
 xn = []
-for it in t_range:
+for t in t_range:
     force = felastic(k,xeq,xpos)
-    xpos,xvel = move(dt,xpos,xvel,force,mass)
+    xpos,xvel = move(xpos,xvel,force,mass)
     xn.append(xpos)
 
 #analytical result
